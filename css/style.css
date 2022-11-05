@@ -1,0 +1,10 @@
+#gridContainer {
+
+}
+
+#gridContainer > div {
+    height: 10 px;
+    width: 10px;
+    background-color: blueviolet;
+    gap: 5px;
+}
