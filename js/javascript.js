@@ -1,4 +1,4 @@
-let columnNum = 15;
+let columnNum = 5;
 let rowNum = columnNum;
 
 const gridContainer = document.querySelector(".gridContainer");
@@ -16,14 +16,17 @@ function makeDivs(numDivs){
 
 makeDivs((columnNum*rowNum));
 
-const boxes = document.getElementsByClassName('boxes');
-// boxes.forEach((box) => {
-    box.addEventListener('mouseover', () => {
-       boxes.style.background = 'black'; 
+const boxes = document.querySelectorAll('.boxes');
+
+    boxes.forEach((box) => {
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = 'blueviolet';
+        });
     });
-    box.addEventListener('mouseout', () => {
-       boxes.style.background = 'pink'; 
-    });
-// });
-// });
-// // boxes.forEach((box) => {
+        //     document.getElementsByClassName("boxes").style.backgroundColor = "red"; 
+        // });
+        // boxes[box].addEventListener('mouseout', (e) => {
+        //     e.target.style.background = 'black'; 
+        //     });
+    // });
+    // console.log(boxes);

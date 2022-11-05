@@ -5,9 +5,9 @@ body {
 }
 
 
-header {
-    
-}
+/* header {
+
+} */
 
 .gridContainer {
 
@@ -23,12 +23,20 @@ header {
 
     .boxes {
         aspect-ratio: 1;
-        background-color: blueviolet;
+
         padding: 1%;
         border: 1px solid salmon;
         border-radius: 5%;
         }
 
-footer {
+/* footer {
 
-}
+} */
+/* 
+.hoverOn {
+    background-color: black;
+} */
+
+/* div.boxes:hover {
+    background-color: blueviolet;
+} */
