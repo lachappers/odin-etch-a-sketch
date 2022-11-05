@@ -1,7 +1,8 @@
-let columnNum = 2;
+let columnNum = 15;
 let rowNum = columnNum;
 
 const gridContainer = document.querySelector(".gridContainer");
+
 
 function makeDivs(numDivs){
     for (let i=0; i<numDivs; i++) {
@@ -14,3 +15,15 @@ function makeDivs(numDivs){
 
 
 makeDivs((columnNum*rowNum));
+
+const boxes = document.getElementsByClassName('boxes');
+// boxes.forEach((box) => {
+    box.addEventListener('mouseover', () => {
+       boxes.style.background = 'black'; 
+    });
+    box.addEventListener('mouseout', () => {
+       boxes.style.background = 'pink'; 
+    });
+// });
+// });
+// // boxes.forEach((box) => {
