@@ -1,7 +1,7 @@
 body {
     background-color: aquamarine;
 }
-
+/*
 .gridContainer {
  background-color: black;
  width: 500px;
@@ -9,12 +9,23 @@ body {
  display: flex;
  flex-wrap: wrap;
 } 
+*/
+
+
+
+.gridContainer {
+    background-color: blanchedalmond;
+    margin: auto;
+    width: min(90%, 75rem);
+    height: auto;
+    display: grid;
+    gap: 2em;
+}
 
 .boxes {
-height: 30 px;
-width: 30px;
-background-color: blueviolet;
-gap: 5px;
-border: 1px salmon;
-/* flex: 1 1 150px; */
-}
+    aspect-ratio: 1;
+    background-color: blueviolet;
+    padding: 1em;
+    border: 5px solid salmon;
+    border-radius: 5px;
+    }
