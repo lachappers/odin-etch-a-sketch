@@ -2,12 +2,28 @@ body {
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
 }
 
 
-/* header {
+header {
+    display: flex;
+    flex-direction: column;
+        padding: 2rem;
+}
 
-} */
+.buttonContainer{
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    background-color: salmon;
+    border-radius: 5%;
+    flex: 1;
+    font-weight: bolder;
+}
 
 .gridContainer {
 
@@ -23,7 +39,6 @@ body {
 
     .boxes {
         aspect-ratio: 1;
-
         padding: 1%;
         border: 1px solid salmon;
         border-radius: 5%;
@@ -31,12 +46,4 @@ body {
 
 /* footer {
 
-} */
-/* 
-.hoverOn {
-    background-color: black;
-} */
-
-/* div.boxes:hover {
-    background-color: blueviolet;
 } */
