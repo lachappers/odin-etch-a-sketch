@@ -1,8 +1,12 @@
 body {
+    height: 100vh;
+    margin: 0;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
+    gap: 30px;
 
 }
 
@@ -16,6 +20,7 @@ header {
 .buttonContainer{
     display: flex;
     gap: 2rem;
+    flex-grow: 0;
 }
 
 button {
@@ -44,6 +49,7 @@ button {
         border-radius: 5%;
         }
 
-/* footer {
-
-} */
+footer {
+    background-color: blueviolet;
+    padding: 1rem;
+}

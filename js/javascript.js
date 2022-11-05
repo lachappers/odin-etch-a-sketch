@@ -4,7 +4,7 @@ let rowNum = columnNum;
 
 const gridContainer = document.querySelector(".gridContainer");
 const resize = document.getElementById('resize');
-const boxes = document.querySelectorAll('.boxes');
+let boxes = document.querySelectorAll('.boxes');
 
 
 makeDivs((columnNum*rowNum));
@@ -21,6 +21,12 @@ resize.addEventListener('click', () => {
         else {
             alert(`Please enter a number between 1 and 100 to play`);
         }
+    boxes = document.querySelectorAll('.boxes');
+    boxes.forEach((box) => {
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = 'blueviolet';
+        });
+    });
     });
 
 function makeDivs(numDivs){
@@ -32,11 +38,11 @@ function makeDivs(numDivs){
     }
 }
 
+boxes = document.querySelectorAll('.boxes');
 boxes.forEach((box) => {
     box.addEventListener("mouseover", () => {
         box.style.backgroundColor = 'blueviolet';
     });
-
 });
 
 const reset = document.getElementById('reset');
