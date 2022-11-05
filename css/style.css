@@ -1,10 +1,20 @@
-#gridContainer {
-
+body {
+    background-color: aquamarine;
 }
 
-#gridContainer > div {
-    height: 10 px;
-    width: 10px;
-    background-color: blueviolet;
-    gap: 5px;
+.gridContainer {
+ background-color: black;
+ width: 500px;
+ height: 100vh;
+ display: flex;
+ flex-wrap: wrap;
+} 
+
+.boxes {
+height: 30 px;
+width: 30px;
+background-color: blueviolet;
+gap: 5px;
+border: 1px salmon;
+/* flex: 1 1 150px; */
 }
