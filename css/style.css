@@ -6,48 +6,60 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 
 }
-
 
 header {
     display: flex;
     flex-direction: column;
         padding: 2rem;
+    /* flex: 1; */
 }
 
 .buttonContainer{
     display: flex;
     gap: 2rem;
-    flex-grow: 0;
+    background-color: aquamarine;
 }
 
-button {
-    background-color: salmon;
-    border-radius: 5%;
-    flex: 1;
-    font-weight: bolder;
-}
-
-.gridContainer {
-
-    display: grid;
-    background-color: blanchedalmond;
-    padding: 1%;
-    width: min(90%, 75rem);
-    min-height: fit-content;
-    grid-gap: 1px;
-    margin: auto;
-    
-}
-
-    .boxes {
-        aspect-ratio: 1;
-        padding: 1%;
-        border: 1px solid salmon;
+    button {
+        background-color: salmon;
         border-radius: 5%;
-        }
+        padding: 1%;
+        flex: 1;
+        font-weight: bolder;
+    }
+
+#main {
+    display: flex;
+    /* background-color: black; */
+    width: auto;
+    flex: 1 0 auto;
+    justify-content: space-around;
+}
+
+    .gridContainer {
+        padding: 5px;
+        height: auto;
+        display: grid;
+        background-color: blanchedalmond;
+        /* padding: 1%; */
+        /* width: min(90%, 75rem); */
+        /* max-width: 50vh; */
+        aspect-ratio: 1;
+        /* grid-gap: 1%; */
+        /* align-self: stretch; */
+        margin: 50px;
+        
+    }
+        .boxes {
+            aspect-ratio: 1;
+            /* padding: 1%; */
+            /* background-color: aliceblue; */
+            border: 1px solid salmon;
+            border-radius: 5%;
+            }
 
 footer {
     background-color: blueviolet;
